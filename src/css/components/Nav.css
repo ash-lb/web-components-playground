@@ -1,0 +1,50 @@
+collapsible-nav {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+  width: 100%;
+  & ul {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+  }
+  & a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  & ul {
+    background-color: azure;
+    border-bottom: 2px solid black;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  &[open] {
+    & ul {
+      display: flex;
+    }
+  }
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+    }
+    & ul {
+      background-color: inherit;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    button {
+      display: none;
+    }
+  }
+}
