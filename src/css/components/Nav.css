@@ -1,9 +1,12 @@
 collapsible-nav {
+  border-bottom: 2px solid black;
   display: flex;
-  margin: auto;
-  max-width: 1200px;
-  padding: 0 2rem;
   width: 100%;
+  & nav {
+    margin: 0 0 0 auto;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+  }
   & ul {
     display: flex;
     gap: 1rem;
@@ -13,8 +16,12 @@ collapsible-nav {
     padding: 1rem;
   }
   & a {
+    color: black;
     display: block;
+    font-weight: bold;
     padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
   }
   & ul {
     background-color: azure;
@@ -23,7 +30,12 @@ collapsible-nav {
     flex-direction: column;
     left: 0;
     position: absolute;
+    top: 0;
     width: 100%;
+  }
+  & button {
+    position: relative;
+    z-index: 1;
   }
   &[open] {
     & ul {
@@ -34,6 +46,8 @@ collapsible-nav {
     nav {
       display: flex;
       flex-direction: row-reverse;
+      margin: auto;
+      padding: 0;
       width: 100%;
     }
     & ul {

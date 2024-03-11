@@ -1,0 +1,8 @@
+ash-button {
+  border: 2px solid plum;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  &:hover {
+    background-color: plum;
+  }
+}
