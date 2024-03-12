@@ -1,0 +1,6 @@
+simple-card {
+  background-color: rgb(221, 160, 221, 0.25);
+  border: 2px solid black;
+  display: block;
+  padding: 1rem;
+}

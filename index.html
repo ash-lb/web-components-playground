@@ -24,18 +24,63 @@
     </collapsible-nav>
   </header>
   <section>
-    <h1>Hello! Don't mind me, just playing around with web components.</h1>
+    <h1>Hello! Don't mind me, just playing around with custom elements and web components.</h1>
   </section>
-  <section style="display: flex; flex-wrap: wrap; gap: 1rem;">
-    <ash-button event-name="alertuser" message="hello user btn 1!">
-      Click Me!
-    </ash-button>
-    <ash-button event-name="alertuser" message="hello user btn 2!">
-      Click Me!
-    </ash-button>
-    <ash-button event-name="navigatelink" link="https://google.com">
-      Click Me!
-    </ash-button>
+  <section>
+    <h2>Some button elements</h2>
+    <flex-container>
+      <ash-button event-name="alertuser" message="hello user btn 1!">
+        Click Me!
+      </ash-button>
+      <ash-button event-name="alertuser" message="hello user btn 2!">
+        Click Me!
+      </ash-button>
+      <ash-button event-name="navigatelink" link="https://google.com">
+        Click Me!
+      </ash-button>
+    </flex-container>
+  </section>
+  <section>
+    <grid-container gap="large">
+      <grid-column span="6">
+        <h2>Heres a heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil, dolorem sint non ut quasi, dolores
+          inventore itaque recusandae doloribus nam blanditiis ex quisquam, esse deserunt at voluptatibus sunt.
+          Distinctio?</p>
+      </grid-column>
+      <grid-column span="6">
+        <img src="http://placehold.it/600x300" alt="">
+      </grid-column>
+    </grid-container>
+  </section>
+  <section>
+    <h2>Some cards!</h2>
+    <grid-container gap="small">
+      <grid-column span="3">
+        <simple-card>
+          <h2>Card 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </simple-card>
+      </grid-column>
+      <grid-column span="3">
+        <simple-card>
+          <h2>Card 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </simple-card>
+      </grid-column>
+      <grid-column span="3">
+        <simple-card>
+          <h2>Card 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </simple-card>
+      </grid-column>
+      <grid-column span="3">
+        <simple-card>
+          <h2>Card 4</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </simple-card>
+      </grid-column>
+    </grid-container>
   </section>
 </body>
 
